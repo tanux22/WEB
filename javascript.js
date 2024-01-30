@@ -98,6 +98,8 @@ while (pr != "quit") {
 
 
 
+
+
 function add(x,y)
 {
     let num=x+y;
@@ -130,6 +132,9 @@ callback(roll);
 
 
 
+
+
+
 function mynumber(){
     const rand=Math.randon();
     if (rand>0.5)
@@ -146,6 +151,11 @@ function mynumber(){
     }
 }
 
+
+
+
+
+
 const cat={
     name:"TAUSH",
     color:"grey",
@@ -157,3 +167,16 @@ const cat={
 }
 
 const meow2=cat.meow;
+
+
+
+
+function yell(msg){
+    try{
+        console.log(toUpperCase().repeat(3));
+    }
+    catch(e){
+        console.log(e);
+        console.log("Please pass a string next time");
+    }
+}
