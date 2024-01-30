@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #151b29;
+}
+
+.tanush{
+    border: 2px rgb(255, 180, 50) solid;
+    padding: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 15px;
+    color:rgb(255, 180, 50);
+    transition: all 0.3s ;
+}
+
+.tanush:hover{
+    border: 2px rgb(245, 255, 50) solid;
+    color: rgb(245, 255, 50);
+    box-shadow:0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
