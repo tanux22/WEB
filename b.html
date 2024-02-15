@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:#3fb5bc;
+        }
+        .blob-9 {
+            aspect-ratio: 1;
+            border: 10px solid #000;
+            background:
+            radial-gradient(farthest-side, #7f0000 98%, rgb(95, 14, 0)) top,
+            radial-gradient(farthest-side, #3fb5bc 98%, rgb(130, 215, 216)) top,
+            radial-gradient(farthest-side, #1ddf2d 98%, rgb(56, 234, 71)) left,
+            radial-gradient(farthest-side, #e5d9d9 98%, rgb(237, 200, 200)) right,
+            radial-gradient(farthest-side, #e2ec26 98%, rgb(240, 232, 122)) bottom,
+            radial-gradient(farthest-side, #0f336b 98%, rgb(66, 76, 179)) top,
+            radial-gradient(farthest-side, #c81ddf 98%, rgb(234, 56, 225)) left,
+            radial-gradient(farthest-side, #078268 98%, rgb(27, 160, 129)) right,
+            radial-gradient(farthest-side, #e2890c 98%, rgb(230, 145, 41)) bottom,
+            #000;
+            width:1450px;
+            height: 700px;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            filter: blur(4px) contrast(10);
+            animation: b9 2s infinite;
+        }
+        @keyframes b9 {
+            0% {
+
+                background-position: top, top, center, right, bottom,top, left, right, bottom
+        }
+        
+        25% {
+            background-position: bottom, right, top, top, left, left, right,bottom, right
+        }
+        
+        50% {
+            background-position: right, bottom, bottom, bottom, top, bottom, top, left,right
+        }
+        
+        75% {
+            background-position: left, top, top,right, bottom,right, bottom, top,left
+        }
+        
+        100% {
+            background-position: top, left, left, right, bottom, top, left, left, right
+        }
+    }
+
+    </style>
+
+
+</head>
+    <body>
+        <div class="blob-9"></div>
+</body>
+</html>

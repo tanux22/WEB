@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blob-9 {
+            width: 80px;
+            aspect-ratio: 1;
+            border: 10px solid #000;
+            background:
+            radial-gradient(farthest-side, #fff 98%, red) top,
+            radial-gradient(farthest-side, #fff 98%, red) top,
+            radial-gradient(farthest-side, #fff 98%, red) left,
+            radial-gradient(farthest-side, #fff 98%, red) right,
+            radial-gradient(farthest-side, #fff 98%, red) bottom,
+            #000;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            filter: blur(4px) contrast(10);
+            animation: b9 2s infinite;
+        }
+        
+        @keyframes b9 {
+            0% {
+                background-position: top, top, left, right, bottom
+        }
+        
+        25% {
+            background-position: bottom, top, left, right, bottom
+        }
+        
+        50% {
+            background-position: right, top, left, right, bottom
+        }
+        
+        75% {
+            background-position: left, top, left, right, bottom
+        }
+        
+        100% {
+            background-position: top, top, left, right, bottom
+        }
+    }
+    </style>
+
+
+</head>
+    <body>
+    
+        <div class="blob-9"></div>
+</body>
+</html>
