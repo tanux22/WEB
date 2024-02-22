@@ -86,17 +86,76 @@ const total=prices.reduce((total,val)=>total+val);
 
 
 
-const person={
-    firstname: "vifs",
-    lastname:"gdff",
-    fullname: ()=>{
-        return `${this.firstname} ${this.lastname}`
-    },
-    shoutname: function(){
-        setTimeout(function () {
-            console.log(this.fullname())
-        },3000)
+// const person={
+//     firstname: "vifs",
+//     lastname:"gdff",
+//     fullname: ()=>{
+//         return `${this.firstname} ${this.lastname}`
+//     },
+//     shoutname: function(){
+//         setTimeout(function () {
+//             console.log(this.fullname())
+//         },3000)
+//     }
+// }
+
+
+
+
+
+//default params
+(numside=6) => {
+    return Math.floor(Math.random()*numside)+1;
+}
+
+
+//spread
+Math.max(12,34,45,23,76,43,321,4663)
+const x=[12,34,45,23,76,43,321,4663]
+Math.max(x)
+Math.max(...x)
+console.log(...x);
+
+const dogs={legs:4,family:"lale"}
+const cats={isfur:true,family:"nane"};
+{...dogs,hand:0};
+{ ...dogs, ...cats};
+
+
+
+
+
+//rest perams
+function sumall(...nums){
+    let total=0;
+    for (let n in nums)
+    {
+        total+=n;
     }
 }
+sumall(1,2,43,2);
+
+
+
+
+//destructuring arrays
+const scores=[432544543,3453543543,43253453,53432345,543135345];
+const [gold,silver,bronze,...everything]=scores;
+
+
+//destructuring objects
+const runner={
+    first:"ergdfx",
+    lasr:"fadjgv",
+    country:"insid",       
+    title:'gvkdav evdan fsoa fwsflc vnvdv'
+}
+const {first,last:vjadv ,country}=runner;
+first;
+lasr;
+country;
+
+
+
 
 
