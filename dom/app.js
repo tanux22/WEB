@@ -44,3 +44,16 @@ h1.getAttribute('class',`${s1} purple`)
 const ig=document.createElement("img")
 ig.src="C:\Users\Ganesh A\OneDrive\Pictures\Saved Pictures\IMG-20230528-WA0087.jpg"
 document.body.appendChild(ig)
+
+
+
+const para=document.querySelector('p')
+para.append("hello")
+para.prepend("bye")
+const b=document.createElement("b")
+b.append("hi")
+para.append(b)
+
+
+
+
