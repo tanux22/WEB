@@ -24,7 +24,7 @@ y.addEventListener('click',function(){
 
 const butts=document.querySelectorAll("button");
 for (let but of butts){
-    but.addEventListener("click",colourize  )
+    but.addEventListener("click",colourize)
 }
 
 
