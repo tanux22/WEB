@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Border</title>
+    <style>
+        .gradient-border {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(to right, #ff0000, #00ff00);
+            border-radius: 10px;
+            /* Adjust as needed */
+        }
+
+        .gradient-border .content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            /* Adjust as needed */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gradient-border">
+        <div class="content">
+            <!-- Your content goes here -->
+            <h2>Gradient Border</h2>
+            <p>This is an example of applying a gradient border using CSS.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
