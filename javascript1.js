@@ -126,7 +126,8 @@ const cats={isfur:true,family:"nane"};
 
 
 //rest perams
-function sumall(...nums){
+function sumall(...nums)
+{
     let total=0;
     for (let n in nums)
     {

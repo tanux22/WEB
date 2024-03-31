@@ -12,7 +12,7 @@ let gameover=false;
 
 pl1.addEventListener("click",(e)=>{
     if(!gameover)
-    {
+    {  
         p1score+=1;
         if(p1score==winsel.value)   
         {
